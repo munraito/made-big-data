@@ -1,0 +1,67 @@
+beginner.how_many_items_in_hdfs:
+    stdin: 9
+intermediate.hdfs_list_recursively:
+    stdin: "hdfs dfs -ls -R /data/wiki"
+intermediate.hdfs_list_recursively_human_readable:
+    stdin: "hdfs dfs -ls -R -h /data/wiki"
+intermediate.hdfs_file_replication_factor:
+    stdin: 3
+intermediate.hdfs_folder_replication_factor:
+    stdin: 0
+intermediate.hdfs_describe_size:
+    stdin: "actual"
+intermediate.hdfs_cumulative_size:
+    stdin: "hdfs dfs -du -s /data/wiki"
+intermediate.hdfs_create_folder:
+    stdin: "hdfs dfs -mkdir v.tsvetkov"
+intermediate.hdfs_create_nested_folder:
+    stdin: "hdfs dfs -mkdir -p v.tsvetkov/1/2/3"
+intermediate.hdfs_remove_nested_folders:
+    stdin: "hdfs dfs -rm -r v.tsvetkov/1"
+intermediate.hdfs_trash_behavior:
+    stdin: "hdfs dfs -rm -r -skipTrash v.tsvetkov/1"
+intermediate.hdfs_create_empty_file:
+    stdin: "hdfs dfs -touchz v.tsvetkov/empty_file"
+intermediate.hdfs_create_small_file:
+    stdin: |-
+        echo -e "some sequence of words\n some sequence of words\n some sequence of words\n some sequence of words\n even more words \n and some numbers: \n 1981612-740083829 \n all. " >temp_file
+        hdfs dfs -put temp_file v.tsvetkov
+intermediate.hdfs_output_file:
+    stdin: "hdfs dfs -cat v.tsvetkov/temp_file"
+intermediate.hdfs_output_file_end:
+    stdin: "hdfs dfs -tail v.tsvetkov/temp_file"
+intermediate.hdfs_output_file_start:
+    stdin: "hdfs dfs -cat v.tsvetkov/temp_file | head"
+intermediate.hdfs_tail_vs_unix_tail:
+    stdin: "tail -c 1024 temp_file"
+intermediate.hdfs_copy_file:
+    stdin: "hdfs dfs -cp v.tsvetkov/temp_file v.tsvetkov/copied_temp"
+intermediate.hdfs_move_file:
+    stdin: |-
+        hdfs dfs -mkdir v.tsvetkov/new_loc
+        hdfs dfs -mv v.tsvetkov/copied_temp v.tsvetkov/new_loc
+intermediate.hdfs_download_and_concatenate:
+    stdin: "hdfs dfs -getmerge -nl v.tsvetkov v.tsvetkov/new_loc v.tsvetkov_merged_files"
+advanced.hdfs_set_file_replication:
+    stdin: |-
+        hdfs dfs -setrep 2 v.tsvetkov/temp_file
+advanced.hdfs_get_files_and_block:
+    stdin: "hdfs fsck v.tsvetkov -files -blocks -locations"
+advanced.hdfs_get_block_information:
+    stdin: "hdfs fsck -blockId blk_1079538590"
+advanced.hdfs_dfs_architecture:
+    stdin: |-
+        hdfs fsck v.tsvetkov/temp_file -blocks
+        sudo -i -u hdfsuser
+advanced.webhdfs_read_100B:
+    stdin: |-
+        curl -i "http://brain-master.bigdatateam.org:50070/webhdfs/v1/user/mail_2021q1/v.tsvetkov/temp_file?op=OPEN&user.name=mail_2021q1"
+        curl -i "http://brain-node1.bigdatateam.org:50075/webhdfs/v1/user/mail_2021q1/v.tsvetkov/temp_file?op=OPEN&user.name=mail_2021q1&namenoderpcaddress=brain-master.bigdatateam.org:8020&offset=0&length=100"
+advanced.webhdfs_curl_follow_redirects:
+    stdin: "curl -i -L 'http://brain-master.bigdatateam.org:50070/webhdfs/v1/user/mail_2021q1/v.tsvetkov/temp_file?op=OPEN&user.name=mail_2021q1'"
+advanced.webhdfs_get_file_detailed_information:
+    stdin: "curl -i -L 'http://brain-master.bigdatateam.org:50070/webhdfs/v1/user/mail_2021q1/v.tsvetkov/temp_file?op=GETFILESTATUS&user.name=mail_2021q1'"
+advanced.webhdfs_change_file_replication:
+    stdin: "curl -i -X PUT -L 'http://brain-master.bigdatateam.org:50070/webhdfs/v1/user/mail_2021q1/v.tsvetkov/temp_file?op=SETREPLICATION&user.name=mail_2021q1&replication=5'"
+advanced.webhdfs_append_to_file:
+    stdin: "curl -i -X POST -T file_to_append 'http://brain-node1.bigdatateam.org:50075/webhdfs/v1/user/mail_2021q1/v.tsvetkov/temp_file?op=APPEND&user.name=mail_2021q1&namenoderpcaddress=brain-master.bigdatateam.org:8020'"

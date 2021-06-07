@@ -1,0 +1,217 @@
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++------+----+------+
+|domain|view|unique|
++------+----+------+
++------+----+------+
+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
++--------------------+----+------+
+|domain              |view|unique|
++--------------------+----+------+
+|www.sport-express.ru|4   |1     |
+|www.cosmo.ru        |2   |2     |
+|www.rambler.ru      |2   |2     |
+|russian.rt.com      |1   |1     |
+|www.championat.com  |1   |1     |
+|www.gazeta.ru       |1   |1     |
+|client.gmsklad.ru   |1   |1     |
+|news.sevas.com      |1   |1     |
+|rubook.org          |1   |1     |
+|ura.news            |1   |1     |
++--------------------+----+------+
+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++---------------------+----+------+
+|domain               |view|unique|
++---------------------+----+------+
+|www.sport-express.ru |5   |2     |
+|www.rambler.ru       |4   |4     |
+|news.rambler.ru      |3   |3     |
+|www.gazeta.ru        |2   |2     |
+|yandex.ru            |2   |2     |
+|life.ru              |2   |2     |
+|www.cosmo.ru         |2   |2     |
+|russian.rt.com       |1   |1     |
+|ria.ru               |1   |1     |
+|football.kulichki.net|1   |1     |
++---------------------+----+------+
+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++--------------------+----+------+
+|domain              |view|unique|
++--------------------+----+------+
+|news.rambler.ru     |7   |6     |
+|life.ru             |5   |5     |
+|www.sport-express.ru|5   |2     |
+|www.rambler.ru      |5   |5     |
+|www.kupivip.ru      |3   |3     |
+|www.championat.com  |3   |3     |
+|www.cosmo.ru        |2   |2     |
+|www.spletnik.ru     |2   |2     |
+|www.coins-spb.ru    |2   |1     |
+|m.kp.ru             |2   |2     |
++--------------------+----+------+
+
+-------------------------------------------
+Batch: 4
+-------------------------------------------
++--------------------+----+------+
+|domain              |view|unique|
++--------------------+----+------+
+|news.rambler.ru     |13  |11    |
+|www.rambler.ru      |9   |9     |
+|m.lenta.ru          |7   |2     |
+|www.mk.ru           |6   |6     |
+|life.ru             |5   |5     |
+|www.sport-express.ru|5   |2     |
+|yandex.ru           |4   |4     |
+|nova.rambler.ru     |4   |4     |
+|www.coins-spb.ru    |3   |1     |
+|smi2.ru             |3   |3     |
++--------------------+----+------+
+
+-------------------------------------------
+Batch: 5
+-------------------------------------------
++--------------------+----+------+
+|domain              |view|unique|
++--------------------+----+------+
+|news.rambler.ru     |21  |18    |
+|www.rambler.ru      |11  |11    |
+|www.mk.ru           |8   |8     |
+|m.lenta.ru          |8   |3     |
+|www.yaplakal.com    |7   |7     |
+|yandex.ru           |7   |7     |
+|life.ru             |7   |7     |
+|www.championat.com  |5   |5     |
+|www.sport-express.ru|5   |2     |
+|www.playground.ru   |5   |5     |
++--------------------+----+------+
+
+-------------------------------------------
+Batch: 6
+-------------------------------------------
++--------------------+----+------+
+|domain              |view|unique|
++--------------------+----+------+
+|news.rambler.ru     |24  |20    |
+|www.rambler.ru      |11  |11    |
+|www.mk.ru           |8   |8     |
+|www.yaplakal.com    |8   |8     |
+|m.lenta.ru          |8   |3     |
+|yandex.ru           |8   |8     |
+|life.ru             |7   |7     |
+|www.playground.ru   |6   |6     |
+|www.championat.com  |5   |5     |
+|www.sport-express.ru|5   |2     |
++--------------------+----+------+
+
+-------------------------------------------
+Batch: 7
+-------------------------------------------
++------------------+----+------+
+|domain            |view|unique|
++------------------+----+------+
+|news.rambler.ru   |28  |25    |
+|www.rambler.ru    |13  |13    |
+|yandex.ru         |11  |10    |
+|www.yaplakal.com  |11  |11    |
+|m.lenta.ru        |10  |5     |
+|www.mk.ru         |9   |9     |
+|www.championat.com|8   |8     |
+|life.ru           |8   |8     |
+|null              |6   |6     |
+|www.playground.ru |6   |6     |
++------------------+----+------+
+
+-------------------------------------------
+Batch: 8
+-------------------------------------------
++------------------+----+------+
+|domain            |view|unique|
++------------------+----+------+
+|news.rambler.ru   |31  |27    |
+|www.rambler.ru    |14  |14    |
+|yandex.ru         |13  |12    |
+|www.yaplakal.com  |11  |11    |
+|m.lenta.ru        |10  |5     |
+|www.mk.ru         |9   |9     |
+|www.championat.com|8   |8     |
+|life.ru           |8   |8     |
+|lenta.ru          |7   |6     |
+|echo.msk.ru       |6   |6     |
++------------------+----+------+
+
+-------------------------------------------
+Batch: 9
+-------------------------------------------
++------------------+----+------+
+|domain            |view|unique|
++------------------+----+------+
+|news.rambler.ru   |36  |30    |
+|yandex.ru         |17  |16    |
+|www.rambler.ru    |17  |16    |
+|www.yaplakal.com  |12  |12    |
+|m.lenta.ru        |11  |6     |
+|life.ru           |11  |11    |
+|www.championat.com|9   |9     |
+|www.mk.ru         |9   |9     |
+|lenta.ru          |8   |7     |
+|smi2.ru           |7   |7     |
++------------------+----+------+
+
+-------------------------------------------
+Batch: 10
+-------------------------------------------
++------------------+----+------+
+|domain            |view|unique|
++------------------+----+------+
+|news.rambler.ru   |39  |31    |
+|yandex.ru         |18  |16    |
+|www.rambler.ru    |17  |16    |
+|m.lenta.ru        |13  |6     |
+|www.yaplakal.com  |13  |13    |
+|life.ru           |11  |11    |
+|www.championat.com|9   |9     |
+|www.mk.ru         |9   |9     |
+|lenta.ru          |9   |8     |
+|smi2.ru           |7   |7     |
++------------------+----+------+
+
+-------------------------------------------
+Batch: 11
+-------------------------------------------
++------------------+----+------+
+|domain            |view|unique|
++------------------+----+------+
+|news.rambler.ru   |45  |37    |
+|www.rambler.ru    |21  |19    |
+|yandex.ru         |19  |17    |
+|m.lenta.ru        |18  |7     |
+|www.yaplakal.com  |15  |15    |
+|lenta.ru          |13  |12    |
+|life.ru           |11  |11    |
+|www.mk.ru         |11  |11    |
+|www.championat.com|10  |10    |
+|ria.ru            |8   |8     |
++------------------+----+------+
+
+Traceback (most recent call last):
+  File "/home/group_mail_2021q1/made21q1_cvetkov/hw8/fin_hw8/task_Tsvetkov_Vitaly_domain_stat.py", line 54, in <module>
+    query.awaitTermination()
+  File "/usr/local/spark/python/lib/pyspark.zip/pyspark/sql/streaming.py", line 103, in awaitTermination
+  File "/usr/local/spark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1255, in __call__
+  File "/usr/local/spark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 985, in send_command
+  File "/usr/local/spark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1152, in send_command
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/spark/python/lib/pyspark.zip/pyspark/context.py", line 270, in signal_handler
+KeyboardInterrupt
