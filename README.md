@@ -1,2 +1,2 @@
-# made_big_data
-Big Data course assignments
+# Big Data, MADE 2021
+Course assignments
